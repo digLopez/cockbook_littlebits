@@ -2,7 +2,7 @@ import time
 from functools import wraps
 
 
-def timethis(func):
+def time_this(func):
     """
     Decorator that reports the execution time
     :param func:
@@ -19,7 +19,7 @@ def timethis(func):
     return wrapper
 
 
-@timethis
+@time_this
 def count_down(n: int):
     """
     count
